@@ -3,13 +3,13 @@ import "izitoast/dist/css/iziToast.min.css";
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-import { fetchImages } from './js/pixabay-api';
+import { fetchImages } from './js/pixabay-api.js';
 import {
     createGallery,
     clearGallery,
     showLoader,
     hideLoader,
-  } from './js/render-functions';
+  } from './js/render-functions.js';
 
 const form = document.querySelector('.form');
 const keywordsEl = document.querySelector('input[name="keywords"]');
