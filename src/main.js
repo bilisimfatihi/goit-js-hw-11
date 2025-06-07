@@ -9,7 +9,7 @@ import {
     clearGallery,
     showLoader,
     hideLoader,
-  } from './js/gallery-functions';
+  } from './js/render-functions';
 
 const form = document.querySelector('.form');
 const keywordsEl = document.querySelector('input[name="keywords"]');
