@@ -27,8 +27,8 @@ form.addEventListener('submit', e => {
       });
     }
     fetchImages(keywords)
-      .then(resolve => {
-        if (resolve.data.hits.length <= 0) {
+      .then(images => {
+        if (images.length === 0) {
           hideLoader();
           iziToast.error({
             title: 'Error',
@@ -39,7 +39,7 @@ form.addEventListener('submit', e => {
           form.reset();
           return;
         }
-        createGallery(resolve.data.hits);
+        createGallery(images);
         hideLoader();
         form.reset();
       })
